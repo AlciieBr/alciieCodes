@@ -3,7 +3,6 @@ module.exports = xMask;
 function xMask(str, finalLength, maskType = "x", start = false) {
 str = str.toString()
 if (maskType.length > 1) maskType = maskType.slice(0, 1)
-//if (fake) start ? str = str.padEnd(finalLength, maskType) : str = str.padStart(finalLength, maskType)
 let index = str.length - finalLength
 
 let mask;
